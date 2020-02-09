@@ -48,6 +48,10 @@
 
 /* Global Settings */
 
+select {
+    margin-bottom: 40px;
+}
+
 form {
     font-family: 'SpaceGrotesk', sans-serif;
 }
@@ -74,10 +78,15 @@ input {
     width: 100%;
     font-size: 17px;
     border: 1px solid #aaaaaa;
+    margin-bottom: 40px;
 }
 
 input.invalid {
     background-color: #ffdddd;
+}
+
+textarea {
+    margin-bottom: 40px;
 }
 
 /* Custom Styles */
@@ -89,6 +98,7 @@ input.invalid {
     padding: 40px;
     width: 70%;
     min-width: 300px;
+    max-width: 700px;
 }
 
 .tab {

@@ -71,11 +71,11 @@ function fixStepIndicator(n) {
     x[n].className += " active";
 }
 
-function check(input) {
-    if (input.value != document.getElementById('password').value) {
-        input.setCustomValidity('Password Must be Matching.');
-    } else {
-        // input is valid -- reset the error message
-        input.setCustomValidity('');
-    }
-}
+// function check(input) {
+//     if (input.value != document.getElementById('password').value) {
+//         input.setCustomValidity('Password Must be Matching.');
+//     } else {
+//         // input is valid -- reset the error message
+//         input.setCustomValidity('');
+//     }
+// }

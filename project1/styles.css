@@ -1,5 +1,89 @@
-/* Style the form */
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('fonts/SpaceGrotesk-Bold.woff2') format('woff2');
+    src: url('fonts/SpaceGrotesk-Bold.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'SpaceGrotesk';
+    src: url('fonts/SpaceGrotesk-Regular.woff2') format('woff2');
+    src: url('fonts/SpaceGrotesk-Regular.woff') format('woff');
+    font-weight: normal;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Utility Classes */
+
+.button-reset {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0;
+    text-align: inherit;
+}
+
+.button-reset[disabled] {
+    cursor: default;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    margin: -1px;
+    padding: 0;
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+}
+
+/* Global Settings */
+
+form {
+    font-family: 'SpaceGrotesk', sans-serif;
+}
+
+h1,
+h2,
+legend,
+label {
+    text-transform: uppercase;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: normal;
+    /* resets font styles set earlier */
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    border: 1px solid #aaaaaa;
+}
+
+input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Custom Styles */
+
 #regForm {
+    /* Style the form */
     background-color: #ffffff;
     margin: 100px auto;
     padding: 40px;
@@ -7,27 +91,13 @@
     min-width: 300px;
 }
 
-/* Style the input fields */
-input {
-    padding: 10px;
-    width: 100%;
-    font-size: 17px;
-    font-family: 'Space Mono', monospace;
-    border: 1px solid #aaaaaa;
-}
-
-/* Mark input boxes that gets an error on validation: */
-input.invalid {
-    background-color: #ffdddd;
-}
-
-/* Hide all steps by default: */
 .tab {
+    /* Hide all steps by default: */
     display: none;
 }
 
-/* Make circles that indicate the steps of the form: */
 .step {
+    /* Make circles that indicate the steps of the form: */
     height: 15px;
     width: 15px;
     margin: 0 2px;
@@ -38,12 +108,12 @@ input.invalid {
     opacity: 0.5;
 }
 
-/* Mark the active step: */
 .step.active {
+    /* Mark the active step: */
     opacity: 1;
 }
 
-/* Mark the steps that are finished and valid: */
 .step.finish {
+    /* Mark the steps that are finished and valid: */
     background-color: #4CAF50;
 }

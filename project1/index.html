@@ -18,6 +18,8 @@
 
         <!-- One "tab" for each step in the form: -->
         <div class="tab">
+            <h2>Account Setup</h2>
+
             <label for="lega-name">Legal Name:</label>
             <input id="legal-name" type="text" placeholder="" required="required">
 
@@ -33,6 +35,22 @@
             <!-- <label for="password-confirm">Confirm Password:</label>
             <input id="password-confirm" type="password" required="required" oninput="check(this)"> -->
 
+        </div>
+
+        <div class="tab">
+            <h2>Let's get to know each other!</h2>
+
+            <label for="address">Street Address:</label>
+            <input type="text" id="address" name="address" placeholder="542 W. 15th Street" required="required">
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="New York" required="required">
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" placeholder="NY" required="required">
+
+            <label for="zip">Zip:</label>
+            <input type="text" id="zip" name="zip" placeholder="10001" required="required">
         </div>
 
         <div class="tab">
@@ -84,6 +102,112 @@
                 </select>
             </label>
 
+            <label for="education">School:</label>
+            <input id="education" type="text" placeholder="Parsons School of Design" required="required">
+
+            <label for="profession">Profession:</label>
+            <input id="profession" type="text" placeholder="Graphic Designer" required="required">
+
+            <label for="income">Annual Income:</label>
+            <input id="income" type="text" placeholder="$52,611" required="required">
+
+            <label for="socialSecurity">Social Security Number:</label>
+            <input id="socialSecurity" type="text" placeholder="235-24-3411" required="required">
+
+            <label for="routingNumber">Bank Routing Number:</label>
+            <input id="routingNumber" type="text" placeholder="623852453" required="required">
+
+        </div>
+
+        <div class="tab">
+            <label for="strengths">What are some of your greatest strengths?</label>
+            <textarea name="" id="strengths"></textarea>
+
+            <label for="weaknesses">What are some of your greatest weaknesses?</label>
+            <textarea name="" id="weaknesses"></textarea>
+
+            <label>
+                Are you a leader, or a follower?
+                <select name="leadership" id="leadership" required="required">
+                    <option value="leader">Leader</option>
+                    <option value="follower">Follower</option>
+                </select>
+            </label>
+
+            <label>
+                Do you think you could be replaced?
+                <select name="replaced" id="replaced" required="required">
+                    <option value="yesReplaced">Yes</option>
+                    <option value="noReplaced">No</option>
+                </select>
+            </label>
+
+            <label for="familyRelations">How is your relationship with your parents?</label>
+            <textarea name="" id="familyRelations"></textarea>
+
+            <fieldset class="right-column">
+                <legend>Have you been diagnosed with any major mental health conditions?</legend>
+                <span>
+                    <input name="mentalHealth" id="noMentalHealth" type="radio" required>
+                    <label for="noMentalHealth">No</label>
+                </span>
+
+                <span>
+                    <input name="mentalHealth" id="yesMentalHealth" type="radio" required>
+                    <label for="yesMentalHealth">Yes</label>
+                </span>
+                <label for="yesMentalHealthText">What have you been diagnosed with, and how does it affect your
+                    day-to-day life?</label>
+                <input id="yesMentalHealthText" type="text">
+            </fieldset>
+
+            <label>
+                What are your political views?
+                <select name="politicalViews" id="politicalViews" required="required">
+                    <option value="fascist">Fascist</option>
+                    <option value="conservative">Conservative</option>
+                    <option value="centrist">Centrist</option>
+                    <option value="liberal">Liberal</option>
+                    <option value="anarchist">Anarchist</option>
+                </select>
+            </label>
+
+            <label>
+                What are your religious beliefs?
+                <select name="religion" id="religion" required="required">
+                    <option value="stateReligion">The State Church</option>
+                    <option value="otherReligion">Other</option>
+                </select>
+            </label>
+
+            <label>
+                How often do you attend religious service?
+                <select name="religionAttendance" id="religionAttendance" required="required">
+                    <option value="ReligionWeekly">Once a week or more</option>
+                    <option value="ReligionMonthly">Once a month</option>
+                    <option value="ReligionYearly">Once a year</option>
+                    <option value="ReligionRare">It's rare for me to attend</option>
+                    <option value="ReligionNever">I do not attend service</option>
+                </select>
+            </label>
+
+            <label>
+                Do you believe in God?
+                <select name="god" id="god" required="required">
+                    <option value="godYes">Yes</option>
+                    <option value="godNo">No</option>
+                </select>
+            </label>
+
+        </div>
+
+        <div class="tab">
+            <input id="confirm" type="checkbox">
+            <span class="confirm-notice">
+                <label for="confirm">I confirm the above information represents my current details and is correct to the
+                    best of my knowledge, and I relinquish my rights and give Socialbook the right to use my information
+                    in any way they see fit—as well as to collect further information as needed.</label>
+            </span>
         </div>
 
         <div style="overflow:auto;">
